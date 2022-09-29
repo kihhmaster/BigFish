@@ -1,0 +1,180 @@
+// GENERAL PROJECT STYLES
+.test__content
+	width: 100%
+	position: relative
+	height: 400px
+	display: flex
+	background: #927d7d
+
+.section__seaUrchin
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100vw
+	height: 400px
+	z-index: 0
+	// overflow: hidden
+.seaUrchin__wave
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: auto
+.weve__green
+	position: absolute
+	width: 100%
+	display: flex
+	top: 0px
+	z-index: 2
+	transform: scale(1)
+.weve__green_1
+	animation: weveGreenAnimate1 45s  linear infinite
+.weve__green_2
+	animation: weveGreenAnimate2 45s  linear infinite
+.wave__azure
+	position: absolute
+	width: 100%
+	display: flex
+	top: 10px
+	z-index: 4
+	transform: scale(1)
+.wave__azure__1
+	animation: weveAzureAnimate1 25s  linear infinite
+.wave__azure__2
+	animation: weveAzureAnimate2 25s  linear infinite
+.wave__blue
+	position: absolute
+	width: 100%
+	display: flex
+	top: 0px
+	z-index: 6
+	transform: scale(1.1)
+.wave__blue__1
+	animation: weveBlueAnimate1 35s  linear infinite
+.wave__blue__2
+	animation: weveBlueAnimate2 35s  linear infinite
+
+.wave__img
+	position: relative
+	width: 100%
+	display: block
+	object-fit: cover
+.footerPlug
+	position: relative
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	background: #F1F1F1
+	border-radius: 30px 30px 0px 0px
+	p
+		font-family: 'SF Pro Display'
+		font-style: normal
+		font-weight: 700
+		font-size: 20px
+		line-height: 122.4%
+		color: rgba(33, 33, 33, 0.22)
+.seaUrchin
+	position: absolute
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 150px
+	height: 150px
+	right: 0
+	bottom: -15%
+	z-index: 10
+	transform: translateY(-50%) translateX(-50%)
+	transition: all 1s 
+.seaUrchin__wrap
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+.seaUrchin__img
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 0
+.seaUrchin__eyes
+	position: relative
+	display: flex
+	width: 100%
+	margin-top: 10px
+	justify-content: center
+	align-items: flex-start
+.seaUrchin__eyes__left
+	margin-right: 10px
+.seaUrchin__eyes__rught
+	margin-top: 3px
+	position: relative
+.seaUrchin__text
+	position: relative
+	text-align: center
+	margin-top: 7px
+	width: 50px
+	font-style: normal
+	font-weight: 600
+	font-size: 12px
+	line-height: 140%
+	text-align: center
+	text-transform: uppercase
+
+	color: #FFFFFF
+.seaUrchin__finish
+	opacity: 0
+.seaUrchin__start
+	opacity: 1
+// .seaUrchin__active
+.weve__Blue__y
+	animation: weveBlueAnimateY 2.5s  linear 1 
+	transform: translateY(0%)
+.weve__Azure__y
+	animation: weveBlueAnimateY 3s  linear 1 
+	transform: translateY(0%)
+.weve__Green__y
+	animation: weveBlueAnimateY 3.5s  linear 1  
+	transform: translateY(0%)
+
+@media screen and ( max-width: 600px	)
+	.section__seaUrchin
+		align-items: flex-end
+	.seaUrchin__wave
+		height: 200px
+	.section__seaUrchin
+		height: 200px
+	.seaUrchin
+		width: 110px
+		height: 110px
+		right: -40px
+		bottom: -50px	
+	.seaUrchin__text
+		font-size: 10px
+		margin-bottom: 10px
+		margin-top: 5px
+	.weve__green
+		top: 60px
+	.wave__azure
+		top: 80px
+	.wave__blue
+		top: 100px
+@media screen and ( max-width: 320px	)
+	.seaUrchin__wave
+		height: 150px
+	.section__seaUrchin
+		height: 150px
+	.weve__green
+		top: 50px
+	.wave__azure
+		top: 65px
+	.wave__blue
+		top: 85px
