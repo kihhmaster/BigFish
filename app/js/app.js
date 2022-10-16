@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 					seaUrchin.classList.remove('seaUrchin__active')
 					console.log("иначе")
 				}
-				seaUrchin.style.left = e.pageX + 'px' // задаём элементу позиционирование слева
-				seaUrchin.style.top = e.pageY + 'px'
+				seaUrchin.style.left = e.clientX + 'px' // задаём элементу позиционирование слева
+				seaUrchin.style.top = (e.clientY-20)  + 'px'
 			})
 			el.addEventListener("mouseout", e => {
 				const target = e.target
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				let y =
 				eye.getBoundingClientRect().top + eye.clientHeight / 2;
 				let radian =
-				Math.atan2(event.pageX - x, event.pageY - y);
+				Math.atan2(event.clientX - x, event.clientY - y);
 				let rot =
 				radian * (180 / Math.PI) * -1 + 270;
 				eye.style.transform =
